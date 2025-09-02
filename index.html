@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mahendra's Portfolio</title>
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav id="navbar" class="navbar">
+      <div class="container nav-container">
+        <a href="#home" class="nav-logo">Mahendra</a>
+        <ul class="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section id="home" class="section home-section">
+      <div class="container home-container fade-in">
+        <img src="dra.png" alt="Profile Photo" class="profile-photo" />
+        <h1>Hello, I'm Mahendra</h1>
+        <p>Welcome to my personal portfolio website</p>
+      </div>
+    </section>
+
+<!-- About Section -->
+<section id="about" class="section about-section">
+  <div class="container about-container fade-in-on-scroll">
+    <h2>About Me</h2>
+    <p>
+      I am an experienced Robotics Educator at Ruang Robot Kediri, skilled in leading teams in robotics, IoT, and educational game projects. Under my guidance, teams have achieved awards in competitions such as Make-X Indonesia 2024, Robofest National 2024, and KoSSMI 2025. I am also proficient in computer-based data processing, report preparation, and effective team coordination to support smooth operations in any work environment.
+    </p>
+    <div class="skills">
+      <div class="skill">
+        <span>Mentoring & Team Leadership</span>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>Basic Programming</span>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 75%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>Basic IoT Systems</span>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 70%;"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <span>Educational Game Development</span>
+        <div class="skill-bar">
+          <div class="skill-level" style="width: 80%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section portfolio-section">
+      <div class="container portfolio-container fade-in-on-scroll">
+        <h2>My Projects</h2>
+        <div class="portfolio-grid">
+          <div class="portfolio-card">
+            <img src="projek1.jpg" alt="Project 1" />
+            <h3>Smart Bin/h3>
+            <p>An innovative smart trash bin that opens and closes its lid automatically when it detects an object or hand nearby. This project uses an ultrasonic sensor to measure distance, allowing users to dispose of waste without touching the lid, making it more hygienic and modern.</p>
+          </div>
+          <div class="portfolio-card">
+            <a href="https://github.com/marhaend86/WRO2025-FutureEngineer-VIM/" target="_blank" rel="noopener noreferrer">
+  <img src="projek2.jpeg" alt="Project 2" />
+</a>
+            <h3>Self Driving car</h3>
+            <p>A mini autonomous car designed for the World Robot Olympiad (WRO) 2025 in the Future Engineers category. The car is equipped with sensors, cameras, and programming algorithms that enable it to navigate independently, recognize paths, and avoid obstacles. This project focuses on advancing skills in robotics engineering and intelligent transportation systems.</p>
+          </div>
+          <div class="portfolio-card">
+            <img src="projek3.jpg" alt="Project 3" />
+            <h3>Smart Dry-G</h3>
+            <p>A prototype simulation of an intelligent grain drying system that utilizes temperature and humidity sensors to monitor the drying process. The system is connected to Blynk IoT, allowing real-time data monitoring through a mobile application. This project demonstrates how technology can support agriculture by providing more efficient and controlled grain drying compared to traditional methods.</p>
+          </div>
+          <div class="portfolio-card">
+            <img src="projek4.jpg" alt="Project 4" />
+            <h3>Smart Window</h3>
+            <p>A smart window prototype that can automatically open or close based on environmental conditions. The system uses sensors such as light and rain detectors to improve energy efficiency and safety inside the house. It can also be controlled manually via a mobile app for convenience. This project showcases the integration of IoT technology into daily life for smarter home automation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container contact-container fade-in-on-scroll">
+        <h2>Contact Me</h2>
+        <div class="contact-info">
+          <p>Email: <a href="mailto:mahendra284des@gmail.com">mahendra284des@gmail.com</a></p>
+          <p>
+            WhatsApp: 
+            <a href="https://wa.me/083842283634" target="_blank" rel="noopener noreferrer">
+              083842283634
+            </a>
+          </p>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Your name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Your email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Your message" required></textarea>
+
+          <button type="submit" class="btn-submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <p>© 2025 Mahendra. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
