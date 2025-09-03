@@ -6,8 +6,11 @@
   <title>Mahendra's Portfolio</title>
   <!-- Google Font: Poppins -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="style.css" />
+
 </head>
+
 <body>
   <header>
     <nav id="navbar" class="navbar">
@@ -28,9 +31,10 @@
     <section id="home" class="section home-section">
       <div class="container home-container fade-in">
         <img src="dra.png" alt="Profile Photo" class="profile-photo" />
-        <h1>Hello, I'm Mahendra</h1>
+        <h1 class="typing">Hello, I'm Mahendra</h1>
         <p>Welcome to my personal portfolio website</p>
       </div>
+      
     </section>
 
 <!-- About Section -->
@@ -77,14 +81,12 @@
         <div class="portfolio-grid">
           <div class="portfolio-card">
             <img src="projek1.jpg" alt="Project 1" />
-            <h3>Smart Bin/h3>
+            <h3>Smart Bin</h3>
             <p>An innovative smart trash bin that opens and closes its lid automatically when it detects an object or hand nearby. This project uses an ultrasonic sensor to measure distance, allowing users to dispose of waste without touching the lid, making it more hygienic and modern.</p>
           </div>
           <div class="portfolio-card">
-            <a href="https://github.com/marhaend86/WRO2025-FutureEngineer-VIM/" target="_blank" rel="noopener noreferrer">
   <img src="projek2.jpeg" alt="Project 2" />
-</a>
-            <h3>Self Driving car</h3>
+            <h3><a href="https://github.com/marhaend86/WRO2025-FutureEngineer-VIM/" target="_blank" rel="noopener noreferrer">Self Driving car</a></h3>
             <p>A mini autonomous car designed for the World Robot Olympiad (WRO) 2025 in the Future Engineers category. The car is equipped with sensors, cameras, and programming algorithms that enable it to navigate independently, recognize paths, and avoid obstacles. This project focuses on advancing skills in robotics engineering and intelligent transportation systems.</p>
           </div>
           <div class="portfolio-card">
@@ -106,13 +108,21 @@
       <div class="container contact-container fade-in-on-scroll">
         <h2>Contact Me</h2>
         <div class="contact-info">
-          <p>Email: <a href="mailto:mahendra284des@gmail.com">mahendra284des@gmail.com</a></p>
-          <p>
-            WhatsApp: 
-            <a href="https://wa.me/083842283634" target="_blank" rel="noopener noreferrer">
-              083842283634
+          <div class="social-links">
+            <a href="mailto:mahendra284des@gmail.com" target="_blank" rel="noopener noreferrer">
+              <i class="fas fa-envelope"></i>
             </a>
-          </p>
+            <a href="https://wa.me/6283842283634" target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.facebook.com/share/1BHvnon8iQ/
+            " target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.instagram.com/marhaend_ra?igsh=am81eHV0b3U2aXNj " target="_blank" rel="noopener noreferrer">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>          
         </div>
         <form   action="https://formspree.io/f/xvgbwkww"
         method="POST" class="contact-form" novalidate>

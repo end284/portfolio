@@ -1,3 +1,39 @@
+const h1 = document.querySelector('.typing');
+const text = h1.textContent;
+
+function typeAnimation() {
+  h1.textContent = '';
+  text.split('').forEach((char, i) => {
+    const span = document.createElement('span');
+    span.textContent = char;
+    span.style.animationDelay = `${i * 0.15}s`;
+    h1.appendChild(span);
+  });
+}
+
+// Jalankan pertama kali
+typeAnimation();
+
+// Ulangi tiap 5 detik
+setInterval(() => {
+  typeAnimation();
+}, 5000);
+
+const p = document.querySelector('.home-section p');
+const pText = p.textContent;
+p.textContent = '';
+
+pText.split('').forEach((char, i) => {
+  const span = document.createElement('span');
+  span.textContent = char;
+  span.style.opacity = 0;
+  span.style.animation = `type 0.03s forwards`;
+  span.style.animationDelay = `${i * 0.05}s`; // delay lebih cepat
+  p.appendChild(span);
+});
+
+
+
 // Smooth scroll handled by CSS scroll-behavior: smooth
 
 // Highlight active nav link on scroll
@@ -73,3 +109,4 @@ document.addEventListener('DOMContentLoaded', () => {
     contactForm.reset();
   });
 });
+
